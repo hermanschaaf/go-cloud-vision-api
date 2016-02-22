@@ -18,6 +18,19 @@ Export export a service account json file into `GOOGLE_APPLICATION_CREDENTIALS` 
 $ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/service_account.json
 ```
 
+### Dependencies
+
+To run this sample, you need to install these packages:
+
+- golang.org/x/net/context
+- golang.org/x/oauth2/google
+- google.golang.org/api/vision/...
+
+To install all of them at once, type:
+
+```
+go get github.com/hermanschaaf/go-cloud-vision-api/...
+```
 
 ## Installation
 
@@ -32,19 +45,6 @@ Make sure that `go-cloud-vision-api` was installed correctly:
 ```shell
 go-cloud-vision-api -h
 ```
-
-### Dependencies
-
-To run this sample, you need to install this packages;
-
-- golang.org/x/net/context
-- golang.org/x/oauth2/google
-- google.golang.org/api/vision/...
-
-This sample repository is contained glide.yaml to privide `glide` command. So you should install that packages with the `glide` command.
-
-See https://github.com/Masterminds/glide
-
 
 ## Usage
 
