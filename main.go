@@ -62,6 +62,14 @@ func annotateImageRequest(path string) (*vision.AnnotateImageRequest, error) {
 				MaxResults: 10,
 				Type:       "FACE_DETECTION",
 			},
+			{
+				MaxResults: 10,
+				Type:       "LABEL_DETECTION",
+			},
+			{
+				MaxResults: 10,
+				Type:       "TEXT_DETECTION",
+			},
 		},
 	}
 	return req, nil
